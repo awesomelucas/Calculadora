@@ -1,0 +1,118 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+}
+
+.container
+{
+    background: rgb(255, 255, 255, 0.05);
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    box-shadow: 5px 5px 30px rgb(0, 0, 0,0.2);
+
+}
+
+.container .calculator
+{
+    position: relative;
+    display: grid;
+
+}
+
+.container .calculator .display_area
+{
+    grid-column: span 4;
+    height: 140px;
+    width: 300px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 30px;
+    background: transparent;
+    color: white;
+    border: 2px solid rgb(255, 255, 255, 0.05);
+}
+
+.container .calculator .display_area
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.container .calculator .display_area #date
+{
+    font-size: 10px;
+    grid-column-end: 1;
+}
+
+.container .calculator .display_area #time
+{
+    font-size: 10px;
+    grid-column-end: 3;
+}
+
+.container .calculator .display_area #display
+{
+    grid-column-end: 3;
+}
+
+.container .calculator button
+{
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    user-select: none;
+    border: 1px solid rgb(255, 255, 255, 0.05);
+    transition: 0.5s;
+}
+
+.container .calculator button:hover
+{
+    transition: 0s;
+    background: rgb(255, 255, 255, 0.05);
+}
+
+.container .calculator button:active
+{
+    background: #14ff47;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container .calculator .clear
+{
+    grid-column: span 2;
+    width: 150px;
+    background: rgb(255, 255, 255, 0.05);
+}
+
+.container .calculator .plus
+{
+    grid-row: span 2;
+    height: 150px;
+}
+
+.container .calculator .equal
+{
+    grid-column: span 2;
+    width: 150px;
+    background: rgb(255, 255, 255, 0.05);
+}

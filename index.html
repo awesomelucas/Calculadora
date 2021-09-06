@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style/index.css">
     <title>Calculadora</title>
 
 </head>
 <body>
     <div class="container">
-        <form class="calculator">
-            <input type="text" readonly class="value"/>
+        <div class="calculator">
+            <!-- <input type="text" readonly class="value"/> -->
+            <div class="display_area">
+                <div id="date"></div>
+                <div id="time"></div>
+                <div id="display"></div>
+            </div>
             <button class="clear">C</button>
             <button>/</button>
             <button>*</button>
@@ -30,9 +35,9 @@
             <button>.</button>
             <button class="equal">=</button>
 
-        </form>
+        </div>
     </div>
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="./Js/vanilla-tilt.js"></script>
     <script type="text/javascript">
         VanillaTilt.init(document.querySelector(".container"), {
             max: 10,
@@ -40,5 +45,7 @@
             scale: 1,
         });
     </script>
+    <script src="./Js/CalcControler.js"></script>
+    <script src="./Js/main.js"></script>
 </body>
 </html>
