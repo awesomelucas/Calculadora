@@ -104,13 +104,13 @@ body
     background: rgb(255, 255, 255, 0.05);
 }
 
-.container .calculator .plus
+.container .calculator .soma
 {
     grid-row: span 2;
     height: 150px;
 }
 
-.container .calculator .equal
+.container .calculator .igual
 {
     grid-column: span 2;
     width: 150px;
